@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Entry &#129302</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p>
+        <label for="userInput">Enter your name:</label>
+        <input type="text" id="userInput" placeholder="Type your name here">
+        <button onclick="mostrarTexto()">Greet</button>
+    </p>
+    <script>
+        function greetUser1() {
+            const userInput = document.getElementById('userInput').value;
+            if (userInput) {
+                alert(`Hello, ${userInput}!`);
+            } else {
+                alert('Please enter your name.');
+            }
+        }
+        function mostrarTexto() {
+            alert(document.getElementById('userInput').value);
+        }
+        
+    </script>
+</body>
+</html>

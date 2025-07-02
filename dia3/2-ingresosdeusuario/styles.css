@@ -1,0 +1,11 @@
+button:hover {
+    color: white;
+    background-color: purple;
+}
+
+label {
+    font-weight: bold;
+    color: black;
+    background-color: lightyellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

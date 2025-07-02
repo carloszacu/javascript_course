@@ -1,0 +1,16 @@
+        h1{
+            font-family: 'Franklin Gothic Medium', 
+            'Arial Narrow', Arial, sans-serif;
+        }
+        h2{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+
+        p{
+            color: rgb(211, 20, 29);
+            border: 10px;
+            border-style: dashed;
+            border-color: rgb(97, 38, 233);
+            
+        }

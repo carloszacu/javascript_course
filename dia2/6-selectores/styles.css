@@ -1,0 +1,42 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2{
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
+#informacion{
+    color: green;
+    font-size: 15px;
+    text-align: center;
+}
+
+.principal{
+    color: purple;
+    font-size: 25px;
+    text-align: center;
+}
+
+a[href*=".org"]:hover{
+    background-color: orange;
+    text-decoration: none;
+}
+a[href*=".org"]{
+    background-color: brown;
+    text-decoration: none;
+}
+
+.principal::first-line{
+    color: darkblue;
+    font-weight: bold;
+}

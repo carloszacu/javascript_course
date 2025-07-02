@@ -1,0 +1,28 @@
+        h1{
+            font-family: 'Franklin Gothic Medium', 
+            'Arial Narrow', Arial, sans-serif;
+        }
+        h2{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+
+    p{
+        border: 15px;
+        border-style: double;
+        border-color: black;
+    }
+
+       .normal{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+
+       .destacado{
+        font-family: 'Courier New', Courier, monospace;
+       }
+
+       .indeseable{
+        font-family: 'Times New Roman', Times, serif;
+        color: red;
+        border-color: purple;
+       }
