@@ -1,0 +1,52 @@
+#name{
+    color: blue;
+    font-size: 20px;
+}
+
+#name:hover{
+    color: red;
+    font-size: 25px;
+}
+
+body{
+    background-color: lightgray;
+}
+
+#catpic:hover{
+    background-color: yellow;
+    border: 5px solid red;
+    border-radius: 10px;
+}
+
+.h1{
+    color: magenta;
+    font-size: 30px;
+}
+
+.text4{
+    color: green;
+    font-size: 15px;
+}
+
+a[href*=".html"]:hover{
+    background-color: rgb(95, 206, 243);
+    font-size: 20px;
+}
+
+#copyright{
+    color: rgb(241, 12, 12);
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    text-align: justify;
+}
+
+.contenedor .descripcionyo::first-line{
+    color: rgb(233, 46, 161);
+    font-weight: bold;
+}
+
+div p:hover:first-line{
+    color: rgb(179, 22, 226);
+    font-weight: bold;
+}
