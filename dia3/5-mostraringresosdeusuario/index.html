@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Ingresos de Usuario &#123542</title>
+</head>
+<body>
+   <p>Write your Name</p>
+   <input type="text" id="userName">
+   <button onclick="showName()">Submit</button>
+   <h1 id="output">Right now I don't know your name</h1>
+   
+   <script>
+    function showName() {
+        let elementName = document.getElementById("userName");
+        let textElement = document.getElementById("output");
+        let message = "Your name is: " + elementName.value;
+        textElement.textContent = message;
+
+    }
+
+
+   </script>
+
+</body>
+</html>

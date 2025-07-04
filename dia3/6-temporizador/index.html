@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular tiempo</title>
+</head>
+<body>
+    <p>Set an alarm in seconds
+        <input type="number" id="timeInput">
+               
+    <button onclick="startTime()">Alarm</button>
+</p>
+
+
+
+   <script>
+        function startTime() {
+            let time = document.getElementById("timeInput").value;
+            setTimeout(timeOut, 1000 * time);
+        }
+        function timeOut() {
+            alert("Time is up!");
+        }
+
+
+   </script> 
+</body>
+</html>

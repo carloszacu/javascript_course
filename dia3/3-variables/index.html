@@ -6,6 +6,16 @@
     <title>Variables &#129503</title>
 </head>
 <body>
-    
+    <p>Write your Name</p>
+    <input type="text" id="nameInput">
+    <button onclick="saluteUser()" id="submitButton">Salute</button>
+
+    <script>
+        function saluteUser() {
+            let userName = document.getElementById("nameInput").value;
+            alert("Hello " + userName + "!");
+        }
+    </script>
+
 </body>
 </html>
