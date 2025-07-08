@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contar tiempo</title>
+    <style>
+        audio::-webkit-media-controls-panel {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <p>Set an alarm in seconds
+        <input type="number" id="timeInput">
+               
+    <button onclick="startTime()">Alarm</button>
+    <button onclick="reset()"> Reset</button>
+    <button onclick="playAlarm()">Alarm Test</button>
+    <h1 id="alarmState" style="color: red;">Turned Off</h1>
+</p>
+
+<audio id="audioAlarm">
+    <source src="audio/alarm.mp3" type="audio/mpeg">
+    Sonido no Habilitado
+</audio>
+
+<audio id="audioAlarm" controls>
+    <source src="audio/alarm.mp3" type="audio/mpeg">
+    Reproducir Sonido
+</audio>
+
+   <script>
+        function startTime() {
+            let time = document.getElementById("timeInput").value;
+            setTimeout(timeOut, 1000 * time);
+        }
+        function timeOut() {
+         //   alert("Time is up!");
+         document.getElementById("alarmState").innerHTML = "Turned On";
+         document.getElementById("alarmState").style.color = "green";
+         document.getElementById("audioAlarm").play();
+        }
+
+        function reset() {
+            document.getElementById("alarmState").innerHTML = "Turned Off";
+            document.getElementById("alarmState").style.color = "red";
+            document.getElementById("timeInput").value = "";
+            document.getElementById("audioAlarm").load();
+        }
+
+        function playAlarm() {
+            document.getElementById("audioAlarm").play();
+        }
+
+
+   </script> 
+</body>
+</html>

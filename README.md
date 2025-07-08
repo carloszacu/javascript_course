@@ -69,10 +69,59 @@ En esta función estamos buscando un elemento HTML a traves de su id (que en est
 
 En Javascript podemos usar una función de tiempo que nos permite contar el tiempo antes de ejecutar otra función y se coloca de esta manera:
 
-```javascript
+```js
 function startTime() {
             let time = document.getElementById("timeInput").value;
             setTimeout(timeOut, 1000 * time);
         }
 ```
+
 Donde Timeout es la función que se ejecuta después de cumplirse el tiempo y el otro parámetro es la cantidad de tiempo en milisegundos, en este parámetro se pueden usar tanto variables como operaciones matemáticas.
+
+Ahora para usar Audio en las páginas podemos usar las siguientes etiquetas:
+
+```html
+<audio id="audioAlarm">
+    <source src="audio/alarm.mp3" type="audio/mpeg">
+    Sonido no Habilitado
+</audio>
+```
+
+con el Source le indicamos la ubicación del archivo de audio, y el type es para indicarle que es un elemento multimedia.
+
+si lo que queremos es usar un panel de control de reproducción de audio, podemos usar las mismas etiquetas audio, pero de la siguiente manera:
+
+```html
+<audio id="audioAlarm" controls>
+    <source src="audio/alarm.mp3" type="audio/mpeg">
+    Sonido no Habilitado
+</audio>
+```
+
+De esta manera, agregando el atributo "controls" a la etiqueta "audio" podemos mostrar un reproductor de audio en la página web, este control puede después ser modificado a través de CSS como cualquier objeto HTML.
+
+Para ello incluimos la etiqueta "Style" en el head del documento HTML y lo escribimos de la siguiente manera:
+
+```html
+<style>
+        audio::-webkit-media-controls-panel {
+            background-color: orange;
+        }
+    </style>
+```
+
+De esta manera configuramos que el objeto de control de multimeda tenga un fondo naranja.
+
+Ahora para usar la fecha y hora del sistema debemos para usarla más claramente asignarle el valor a una variable y luego tomamos el valor directamente desde la variable
+
+>[!NOTE]
+>
+>BLA BLA BLA BLA
+
+>[!IMPORTANT]
+
+>[!WARNING]
+
+>[!CAUTION]
+
+>[!TIP]
